@@ -2,17 +2,23 @@
   "name": "jsmp-infra-pug",
   "version": "1.0.0",
   "description": "",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "start": "npm run build",
     "prebuild": "npm run clean",
     "build": "npm run bundle",
     "bundle": "npm-run-all babel compile",
     "babel": "babel src --out-dir tmp",
-    "compile": "browserify tmp/index.js -o dist/bundle.js",
+    "compile": "browserify tmp/index.js --standalone Pug -o dist/index.js",
     "clean": "rimraf tmp dist",
     "test": "node tmp/tests/pugHandlers.test.js"
   },
+  "keywords": [
+    "npm",
+    "unique",
+    "array",
+    "string"
+  ],
   "author": "",
   "license": "ISC",
   "dependencies": {
