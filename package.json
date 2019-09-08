@@ -21,6 +21,7 @@
   ],
   "author": "",
   "license": "ISC",
+  "homepage": "https://github.com/kira2109/jsmp-infra-pug",
   "dependencies": {
     "assert": "^2.0.0",
     "lodash": "^4.17.15",
